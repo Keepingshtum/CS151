@@ -1,4 +1,4 @@
-public class Main {
+public class VincentSaw {
     public static void main(String[] args) {
         Person vincent = new Person("Vincent", 21, "Golf and Racing");
         vincent.introduce_self();
