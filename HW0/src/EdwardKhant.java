@@ -1,4 +1,4 @@
-class Person{
+class EdwardsPerson {
     private String lastName, firstName;
     private int age;
     private char midInitial;
@@ -13,8 +13,8 @@ class Person{
     public int getAge(){return this.age;}
     public char getMidInitial(){return this.midInitial;}
 
-    public Person(String lastName, String firstName, int age, char midInitial){this.lastName=lastName;this.firstName=firstName;this.age=age;this.midInitial=midInitial;}
-    public Person(){this("LAST NAME","FIRST NAME",0,'M');}
+    public EdwardsPerson(String lastName, String firstName, int age, char midInitial){this.lastName=lastName;this.firstName=firstName;this.age=age;this.midInitial=midInitial;}
+    public EdwardsPerson(){this("LAST NAME","FIRST NAME",0,'M');}
 
     public void getInfo(){System.out.println("Last Name : "+this.lastName); System.out.println("First Name : "+this.firstName); System.out.println("Age : "+this.age); System.out.println("Middle Initial : "+this.midInitial);}
 }
@@ -23,7 +23,7 @@ interface BioBeing{public void breath();}
 
 interface Entity{public final static int bioMass = 50; public default void letThereBeMass(){System.out.println("This student has masssss!");};}
 
-class Student extends Person implements BioBeing,Entity{
+class Student extends EdwardsPerson implements BioBeing,Entity{
     private int studentID;
     public void setStudentID(int studentID){this.studentID=studentID;}
     public int getStudentID(){return this.studentID;}
@@ -36,9 +36,9 @@ class Student extends Person implements BioBeing,Entity{
 }
 public class EdwardKhant{
     public static void main(String[] args){
-        Person person1 = new Person();
+        EdwardsPerson person1 = new EdwardsPerson();
         person1.getInfo();
-        Person person2 = new Student();
+        EdwardsPerson person2 = new Student();
         person2.getInfo();
     }
 }

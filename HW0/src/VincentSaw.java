@@ -1,22 +1,22 @@
 public class VincentSaw {
     public static void main(String[] args) {
-        Person vincent = new Person("Vincent", 21, "Golf and Racing");
+        VincentsPerson vincent = new VincentsPerson("Vincent", 21, "Golf and Racing");
         vincent.introduce_self();
     }
 }
 
-class Person {
+class VincentsPerson {
     String name;
     int age;
     String hobbies;
 
-    Person() {
+    VincentsPerson() {
         name = "N/A";
         age = -1;
         hobbies = "N/A";
     }
 
-    Person(String n, int a, String h) {
+    VincentsPerson(String n, int a, String h) {
         name = n;
         age = a;
         hobbies = h;
