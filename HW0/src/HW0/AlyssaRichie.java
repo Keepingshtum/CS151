@@ -1,3 +1,5 @@
+package HW0;
+
 /* Alyssa Richie
  * 9/4/2023
  * Hw 0

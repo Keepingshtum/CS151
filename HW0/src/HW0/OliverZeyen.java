@@ -1,4 +1,4 @@
-//Oliver Zeyen
+package HW0;//Oliver Zeyen
 import java.util.Scanner;
 public class OliverZeyen {
 	public static String getSecretName(String agentName) {

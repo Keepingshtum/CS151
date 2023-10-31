@@ -1,3 +1,5 @@
+package HW0;
+
 public class EricTran {
     public static void main(String[] args) {
         TeddyBear myTeddyBear = new TeddyBear("Blue", 2);

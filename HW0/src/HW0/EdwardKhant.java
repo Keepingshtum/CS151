@@ -1,3 +1,5 @@
+package HW0;
+
 class EdwardsPerson {
     private String lastName, firstName;
     private int age;
