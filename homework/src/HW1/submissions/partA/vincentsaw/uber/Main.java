@@ -1,4 +1,4 @@
-package HW1.violations.uber;
+package HW1.submissions.partA.vincentsaw.uber;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package HW1.violations.doordash;
+package HW1.submissions.partA.vincentsaw.doordash;
 
 public class Restaurant {
     private String name;

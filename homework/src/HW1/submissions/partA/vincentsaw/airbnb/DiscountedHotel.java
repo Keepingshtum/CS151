@@ -1,4 +1,4 @@
-package HW1.violations.airbnb;
+package HW1.submissions.partA.vincentsaw.airbnb;
 
 public class DiscountedHotel extends Hotel {
     int calculateTotalPrice(int numberOfNights) {

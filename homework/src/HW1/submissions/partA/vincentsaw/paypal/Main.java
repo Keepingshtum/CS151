@@ -1,4 +1,4 @@
-package HW1.violations.paypal;
+package HW1.submissions.partA.vincentsaw.paypal;
 
 public class Main {
     public static void main(String[] args) {

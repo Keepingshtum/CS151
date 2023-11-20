@@ -1,4 +1,4 @@
-package HW1.violations.facebook;
+package HW1.submissions.partA.vincentsaw.facebook;
 
 //This was the original post class, that was implemented for our "Facebook".
 
