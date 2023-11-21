@@ -5,60 +5,27 @@ package HW1.submissions.partA.facebook;
 
 public class Post2 {
 
-    private String imageUrl;
+    private TextManager textManager;
+    private VideoManager videoManager;
+    private ImageManager imageManager;
 
-    private String videoUrl;
     private boolean isImage;
-
     private boolean isVideo;
 
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
-    public String getVideoUrl() {
-        return videoUrl;
-    }
-
-    public void setVideoUrl(String videoUrl) {
-        this.videoUrl = videoUrl;
-    }
-
-    public boolean isImage() {
-        return isImage;
-    }
-
-    public void setImage(boolean image) {
-        isImage = image;
-    }
-
-    public boolean isVideo() {
-        return isVideo;
-    }
-
-    public void setVideo(boolean video) {
-        isVideo = video;
-    }
-
     public Post2(String text) {
-        this.text = text;
+        textManager.setText(text);
     }
 
     public Post2(String imageUrl, boolean isImage) {
         if(isImage) {
-            this.imageUrl = imageUrl;
+            imageManager.setImageUrl(imageUrl);
             this.isImage = true;
         }
     }
 
     public Post2(String videoUrl, boolean isImage, boolean isVideo){
         if(isVideo && !isImage) {
-            this.videoUrl = videoUrl;
+            videoManager.setVideoUrl(videoUrl);
             this.isImage = false;
             this.isVideo = true;
         }
@@ -66,6 +33,6 @@ public class Post2 {
 
 
     void displayText() {
-        System.out.println(text);
+        System.out.println(textManager.getText());
     }
 }
