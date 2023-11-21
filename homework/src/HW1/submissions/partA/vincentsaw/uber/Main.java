@@ -8,8 +8,6 @@ public class Main {
 
         RideManager rideManager = new RideManager();
 
-        double fare = rideManager.calculateRideFare(ride);
-
-        rideManager.sendNotification(user, "Your ride fare is: $" + fare);
+        rideManager.notifyUserRideFare(user, ride);
     }
 }
