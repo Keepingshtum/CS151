@@ -5,11 +5,11 @@ public class Main {
         Hotel regularHotel = new Hotel();
         DiscountedHotel discountedHotel = new DiscountedHotel();
 
-        BookingService bookingService = new BookingServiceImpl();
-        int regularHotelTotalPrice = bookingService.calculateTotalPrice(regularHotel, 3);
-        int discountedHotelTotalPrice = bookingService.calculateTotalPrice(discountedHotel, 3);
+        discountedHotel.setDiscountDate("11/21");
 
-        System.out.println("Regular Hotel Total Price: $" + regularHotelTotalPrice);
-        System.out.println("Discounted Hotel Total Price: $" + discountedHotelTotalPrice);
+        BookingService bookingService = new BookingServiceImpl();
+
+        System.out.println("Regular Hotel Total Price: $" + bookingService.calculateTotalPrice(regularHotel, 3));
+        System.out.println("Discounted Hotel Total Price: $" + bookingService.calculateTotalPrice(discountedHotel, 3));
     }
 }

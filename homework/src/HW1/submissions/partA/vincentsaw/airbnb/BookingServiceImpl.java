@@ -11,6 +11,7 @@ public class BookingServiceImpl implements BookingService {
             pd = new PricingHotel();
         }
         int totalPrice = pd.calculateTotalPrice(numberOfNights);
+        System.out.println("Discounts on: " + hotel.getDiscountDate());
         return totalPrice;
     }
 }
