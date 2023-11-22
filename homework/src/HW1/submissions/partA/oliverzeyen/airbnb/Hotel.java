@@ -1,9 +1,8 @@
 package HW1.violations.airbnb;
 
 public class Hotel {
-    int calculateTotalPrice(int numberOfNights) {
-        return numberOfNights * 100;
-    }
+	public int pricePerNight = 100;
+	public int getPricePerNight() {
+		return this.pricePerNight;
+	}
 }
-
-

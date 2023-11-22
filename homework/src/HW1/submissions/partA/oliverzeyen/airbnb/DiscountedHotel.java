@@ -1,7 +1,8 @@
 package HW1.violations.airbnb;
 
 public class DiscountedHotel extends Hotel {
-    int calculateTotalPrice(int numberOfNights) {
-        return super.calculateTotalPrice(numberOfNights) - 50;
-    }
+	public int pricePerNight = super.pricePerNight/2;
+	@Override public int getPricePerNight() {
+		return this.pricePerNight;
+	}
 }
