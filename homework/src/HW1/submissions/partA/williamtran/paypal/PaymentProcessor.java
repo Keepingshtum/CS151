@@ -1,13 +1,13 @@
 package HW1.submissions.partA.williamtran.paypal;
 
 public class PaymentProcessor {
-    private PayPalGateway payPalGateway;
+    private Gateway Gateway;
 
     PaymentProcessor() {
-        this.payPalGateway = new PayPalGateway();
+        this.Gateway = new PayPalGateway();
     }
 
     void processPayment(Account account, double amount) {
-        payPalGateway.processPayment(account,amount);
+        Gateway.processPayment(account,amount);
     }
 }

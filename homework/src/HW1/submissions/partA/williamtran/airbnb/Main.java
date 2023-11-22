@@ -2,7 +2,7 @@ package HW1.submissions.partA.williamtran.airbnb;
 
 public class Main {
     public static void main(String[] args) {
-        Hotel regularHotel = new Hotel();
+        NormalHotel regularHotel = new NormalHotel();
         DiscountedHotel discountedHotel = new DiscountedHotel();
 
         BookingService bookingService = new BookingServiceImpl();
