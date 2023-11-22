@@ -1,0 +1,1 @@
+Link to repo containing part B of submission: https://github.com/levictoria0117/HW1-partB
