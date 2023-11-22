@@ -1,4 +1,4 @@
-#Problem: Airbnb
+# Problem: Airbnb
 
 ## pt.1 What SOLID(s) principle is being violated?
 
@@ -16,8 +16,7 @@ Create an interface that holds the calculateTotalPrice() function so that differ
 Allows users to see how much the total bill is with California tax and a tip amount of their choice.
 
 
-
-#Problem: DoorDash
+# Problem: DoorDash
 
 ## pt.1 What SOLID(s) principle is being violated?
 
@@ -34,10 +33,7 @@ Split the FoodDeliveryAndTrackingService into 2 different classes with 1 respons
 Allows users to see what orders still need to be delivered to a specific address of the customer.
 
 
-
-
-
-#Problem: Facebook
+# Problem: Facebook
 
 ## pt.1 What SOLID(s) principle is being violated?
 
@@ -53,7 +49,7 @@ Split the Post2 class into 3 different classes: images, text, videos
 Turned Post1 into an interface to ensure that if we want to create different posts in the future like posting figs then we can easily implement it. Along with that I added a “display()” function for each class that just displays the url of each image/video. This is to set up for future functionality when we have the code to import and display the actual image/video.
 
 
-#Problem: PayPal
+# Problem: PayPal
 
 ## pt.1 What SOLID(s) principle is being violated?
 
@@ -73,9 +69,7 @@ To align with the Dependency Inversion Principle the high-level module class sho
 You can now request a refund of a specific amount from a specific account
 
 
-
-
-#Problem: Uber
+# Problem: Uber
 
 ## pt.1 What SOLID(s) principle is being violated?
 
