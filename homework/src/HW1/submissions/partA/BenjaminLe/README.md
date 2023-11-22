@@ -2,8 +2,8 @@
 
 ## pt.1 What SOLID(s) principle is being violated?
 
-Liskov Substitution Principle: Discounted Hotel is unable to replace Hotel because it uses the super. method and if the Hotel class is gone then super. won't have anything to inherit thus it no longer works
-Open Closed Principle: I have to extend and modify the hotel class every time I want to add a different house to the airbnb. 
+- Liskov Substitution Principle: Discounted Hotel is unable to replace Hotel because it uses the super. method and if the Hotel class is gone then super. won't have anything to inherit thus it no longer works
+- Open Closed Principle: I have to extend and modify the hotel class every time I want to add a different house to the airbnb. 
 
 ## pt.2 How do you fix the identified issues above?
 
