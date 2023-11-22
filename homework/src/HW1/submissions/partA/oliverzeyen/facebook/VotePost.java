@@ -1,7 +1,5 @@
 package HW1.violations.facebook;
 
-//This was the original post class, that was implemented for our "Facebook".
-
 class VotePost extends TextPost {
     private String text;
     private String prompt;
@@ -23,11 +21,12 @@ class VotePost extends TextPost {
     }
     
     public void votedNo() {
-    	votedNo++;
+    	voteNo++;
     }
     
-    void display() {
-        System.out.println(text);
-        // Code for displaying text post
+    @Override
+    public void display() {
+        super.display();
+        System.out.println("Prompt: " + this.prompt + "\nYes votes: " + voteYes + "\nNo votes:" + voteNo);
     }
 }

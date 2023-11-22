@@ -12,6 +12,6 @@ public class PaymentProcessor {
     }
     
     void processRequest(Account account, double amount) {
-    	payPalGateway.processRquest(account, amount);
+    	payPalGateway.processRequest(account, amount);
     }
 }

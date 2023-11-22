@@ -1,9 +1,6 @@
 package HW1.violations.facebook;
 
-
-//This is the new post class, that was implemented for our "Facebook" to help support images and videos.
-
-public class TextPost {
+public class TextPost implements Post{
     private String text;
 
     public TextPost(String text) {
@@ -18,7 +15,7 @@ public class TextPost {
         this.text = text;
     }
 
-    void displayText() {
+    public void display() {
         System.out.println(text);
     }
 }

@@ -2,14 +2,14 @@ package HW1.violations.uber;
 
 public class Main {
     public static void main(String[] args) {
-        Ride ride = new Ride(1,1);
-        User user = new User();
+        RideInformation ride = new RideInformation(1,1);
+        UserAccount user = new UserAccount();
         user.setUsername("john_doe");
 
-        RideManager rideManager = new RideManager();
-
+        RideFareCalculator rideManager = new RideFareCalculator();
+        NotificationManager notificationManager = new NotificationManager();
         double fare = rideManager.calculateRideFare(ride);
 
-        rideManager.sendNotification(user, "Your ride fare is: $" + fare);
+        notificationManager.sendNotification(user, "Your ride fare is: $" + fare);
     }
 }

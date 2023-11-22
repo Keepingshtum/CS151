@@ -1,14 +1,13 @@
 package HW1.violations.facebook;
 
-//This was the original post class, that was implemented for our "Facebook".
-
 class ImagePost extends TextPost {
     private String imageUrl;
     private boolean isImage;
-
-    void display() {
-        System.out.println(text);
-        // Code for displaying text post
+   
+    @Override
+    public void display() {
+        super.display();
+        System.out.println("Now displaying image: " + this.getImageUrl());
     }
     // Constructor, getters, and setters for text
     

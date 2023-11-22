@@ -1,19 +1,18 @@
 package HW1.violations.facebook;
 
-//This was the original post class, that was implemented for our "Facebook".
-
 class VideoPost extends TextPost{
     private boolean isVideo;
     private String videoUrl;
 
-    void display() {
-        System.out.println(text);
-        // Code for displaying text post
+    @Override
+    public void display() {
+    	super.display();
+        System.out.println("Now watching: " + this.getVideoUrl());
     }
 
     // Constructor, getters, and setters for text
 
-    public VideoPost(text, isVideo, videoUrl) {
+    public VideoPost(String text, boolean isVideo, String videoUrl) {
     	super(text);
     	this.isVideo = isVideo;
     	this.videoUrl = videoUrl;
@@ -31,7 +30,5 @@ class VideoPost extends TextPost{
     }
     public void setVideo(boolean video) {
         isVideo = video;
-    }
-    
-    
+    }  
 }

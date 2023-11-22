@@ -10,11 +10,11 @@ public class OrderManager {
     }
     
     public void processOrder(Restaurant r, Customer c) {
-    	FoodDeliveryService.deliverFood(Restaurant r, Customer c);
+    	FDS.deliverFood(r, c);
     }
     
     public void trackOrder(String trackingNumber) {
-    	FTS.trackPackage(String trackingNumber);
+    	FTS.trackPackage(trackingNumber);
     }
 }
 
