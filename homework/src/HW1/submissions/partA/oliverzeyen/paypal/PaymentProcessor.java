@@ -8,6 +8,10 @@ public class PaymentProcessor {
     }
 
     void processPayment(Account account, double amount) {
-        payPalGateway.processPayment(account,amount);
+        payPalGateway.processPayment(account, amount);
+    }
+    
+    void processRequest(Account account, double amount) {
+    	payPalGateway.processRquest(account, amount);
     }
 }
