@@ -1,1 +1,1 @@
-Add your submissions for part B of the homework here. 
+Edward's submission for HW1 Part B
