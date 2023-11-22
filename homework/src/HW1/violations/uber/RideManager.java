@@ -19,8 +19,23 @@ class RideManager {
         return totalFare;
     }
 
+    // Generate a ride summary
+    String generateRideSummary(Ride ride) {
+        double totalFare = calculateRideFare(ride);
+
+        // Build the ride summary
+        StringBuilder summary = new StringBuilder();
+        summary.append("Ride Summary\n");
+        summary.append("Distance: ").append(ride.getDistanceInMiles()).append(" miles\n");
+        summary.append("Duration: ").append(ride.getDurationInMinutes()).append(" minutes\n");
+        summary.append("Total Fare: $").append(totalFare);
+
+        return summary.toString();
+    }
+}
+
+class NotificationManager {
     void sendNotification(User user, String message) {
-        // Code for sending notifications to the user
         System.out.println("Notification sent to user: " + user.getUsername() + " - " + message);
     }
 }
@@ -49,7 +64,6 @@ class Ride {
     public void setDurationInMinutes(int durationInMinutes) {
         this.durationInMinutes = durationInMinutes;
     }
-
 }
 
 class User {
@@ -63,8 +77,4 @@ class User {
     public void setUsername(String username) {
         this.username = username;
     }
-
-
 }
-
-
