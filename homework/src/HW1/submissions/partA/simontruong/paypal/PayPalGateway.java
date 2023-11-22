@@ -1,4 +1,4 @@
-package HW1.submissions.partA.paypal;
+package HW1.submissions.partA.simontruong.paypal;
 
 public class PayPalGateway implements Processable {
     

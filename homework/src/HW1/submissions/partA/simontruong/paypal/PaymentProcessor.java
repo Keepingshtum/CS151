@@ -1,4 +1,4 @@
-package HW1.submissions.partA.paypal;
+package HW1.submissions.partA.simontruong.paypal;
 
 public class PaymentProcessor {
     private Processable process;

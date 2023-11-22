@@ -1,4 +1,4 @@
-package HW1.submissions.partA.facebook;
+package HW1.submissions.partA.simontruong.facebook;
 
 public class ImageManager {
 

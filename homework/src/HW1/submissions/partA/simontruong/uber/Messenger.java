@@ -1,4 +1,4 @@
-package HW1.submissions.partA.uber;
+package HW1.submissions.partA.simontruong.uber;
 
 public class Messenger {
     void sendNotification(User user, String message) {

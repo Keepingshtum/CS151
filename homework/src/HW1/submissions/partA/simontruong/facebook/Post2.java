@@ -1,4 +1,4 @@
-package HW1.submissions.partA.facebook;
+package HW1.submissions.partA.simontruong.facebook;
 
 
 //This is the new post class, that was implemented for our "Facebook" to help support images and videos.

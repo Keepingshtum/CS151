@@ -1,4 +1,4 @@
-package HW1.submissions.partA.airbnb;
+package HW1.submissions.partA.simontruong.airbnb;
 
 public class DiscountedHotel implements BookingService {
     @Override

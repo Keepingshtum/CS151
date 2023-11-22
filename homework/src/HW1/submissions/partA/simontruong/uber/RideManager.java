@@ -1,4 +1,4 @@
-package HW1.submissions.partA.uber;
+package HW1.submissions.partA.simontruong.uber;
 
 class RideManager {
     private final double BASE_FARE = 5.0; // Base fare in dollars

@@ -1,4 +1,4 @@
-package HW1.submissions.partA.uber;
+package HW1.submissions.partA.simontruong.uber;
 
 public class Main {
     public static void main(String[] args) {

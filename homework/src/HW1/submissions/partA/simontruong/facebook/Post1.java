@@ -1,4 +1,4 @@
-package HW1.submissions.partA.facebook;
+package HW1.submissions.partA.simontruong.facebook;
 
 //This was the original post class, that was implemented for our "Facebook".
 
