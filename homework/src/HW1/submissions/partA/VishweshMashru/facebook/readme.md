@@ -1,0 +1,2 @@
+I created separate classes (TextPost, ImagePost, VideoPost) for each type of post, and each class implements the Post interface. Each class now has a single responsibility: handling its specific type of post.
+This design adheres better to the SRP by separating the responsibilities of different post types and follows the OCP by allowing for easy extension with new post types without modifying existing code.
