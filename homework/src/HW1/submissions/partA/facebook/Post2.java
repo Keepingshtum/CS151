@@ -31,8 +31,4 @@ public class Post2 {
         }
     }
 
-
-    void displayText() {
-        System.out.println(textManager.getText());
-    }
 }

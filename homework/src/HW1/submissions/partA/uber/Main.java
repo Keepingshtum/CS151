@@ -7,9 +7,10 @@ public class Main {
         user.setUsername("john_doe");
 
         RideManager rideManager = new RideManager();
-
+        Messenger messenger = new Messenger();
+        
         double fare = rideManager.calculateRideFare(ride);
 
-        rideManager.sendNotification(user, "Your ride fare is: $" + fare);
+        messenger.sendNotification(user, "Your ride fare is: $" + fare);
     }
 }

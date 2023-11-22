@@ -11,4 +11,8 @@ public class TextManager {
         this.text = text;
     }
     
+    void displayText() {
+        System.out.println(text);
+    }
+
 }

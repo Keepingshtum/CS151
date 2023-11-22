@@ -1,6 +1,6 @@
 Violations:
 Open-Closed Principle - DiscountedHotel modifies the price calculation from Hotel
-Liskov Substitution Principle - Somewhat connected with OCP for DiscountedHotel, we want to remove reliance on Hotel, and the two classes could conflict in conditions
+
 Dependency Inversion Principle - BookingService and BookingServiceImpl both rely on a concrete version of Hotel, causing compile problems
 when we segregate DiscountedHotel from Hotel
 

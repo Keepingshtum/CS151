@@ -1,13 +1,11 @@
 package HW1.submissions.partA.paypal;
 
 public class PaymentProcessor {
-    private PayPalGateway payPalGateway;
+    private Processable process;
 
-    PaymentProcessor() {
-        this.payPalGateway = new PayPalGateway();
-    }
+    
 
     void processPayment(Account account, double amount) {
-        payPalGateway.processPayment(account,amount);
+        process.processPayment(account,amount);
     }
 }

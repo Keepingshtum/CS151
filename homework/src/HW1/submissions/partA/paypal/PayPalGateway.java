@@ -1,9 +1,9 @@
 package HW1.submissions.partA.paypal;
 
-public class PayPalGateway {
+public class PayPalGateway implements Processable {
     
-
-    void processPayment(Account account, double amount) {
+    @Override
+    public void processPayment(Account account, double amount) {
         System.out.println("Processing payment of $" + amount + " for acocunt " + account.getAccountID() + " using PayPal.");
     }
 }
