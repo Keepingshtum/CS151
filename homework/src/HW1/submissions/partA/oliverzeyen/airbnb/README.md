@@ -4,8 +4,10 @@ violates SRP (S)
 How? To me, it seems like Hotels and DiscountedHotels should not be able to calculate the price depending on their stay. I think having a total amount is fine per night, but the actual calculation should be left to the BookingSerivce, as BookingService serves as a useless middleman in this case. Assuming that this is a specific cut out of a much larger, fully fleshed out class, it can be very apparent why this could be a bad thing. Essentially, a Hotel's job would/should be more on the lines of the information about the Hotel, rather than calculating your exact stay. While a price per night is useful and important to a hotel, we can use bookingservice to calculate the number of days we would spend in combination with the price point grabbed from each hotel.
 
 violates OCP (O)
-How? Any changes
- made to hotel's pricing, directly changes the pricing of other hotels. So, if you made the hotel $50 for the stay, and you tried to use the discountedhotel, you could potentially get a free stay. Assuming that these are two completely different hotels, unless they are somehow connected, it makes much less sense for a discountedhotel to be directly connected with a hotel.
+How? Any changes made to hotel's pricing, directly changes the pricing of other hotels. So, if you made the hotel $50 for the stay, and you tried to use the discountedhotel, you could potentially get a free stay. Assuming that these are two completely different hotels, unless they are somehow connected, it makes much less sense for a discountedhotel to be directly connected with a hotel.
+
+violates LSP (L)
+How? A DiscountedHotel cannot be substituted for Hotel without there being the possibility for drastic changes. It could easily result in expected behavior especially with such a simple change. Even though said simple change seems "simple", the actual calculations are done behind the scenes, and this makesway for many possiblities for error.
 
  approach:
 
