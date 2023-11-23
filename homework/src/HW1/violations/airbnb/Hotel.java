@@ -1,7 +1,10 @@
 package HW1.violations.airbnb;
 
-public interface Hotel {
-    int calculateTotalPrice(int numberOfNights);
+public class Hotel {
+    int calculateTotalPrice(int numberOfNights)
+    {
+        return numberOfNights*100;
+    }
 }
 
 
