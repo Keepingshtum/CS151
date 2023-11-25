@@ -90,7 +90,7 @@ class Ride {
 class User {
     // User details
 	
-	private Stack<String> messages;
+    private Stack<String> messages;
     private String username;
 
     public User(String username)
