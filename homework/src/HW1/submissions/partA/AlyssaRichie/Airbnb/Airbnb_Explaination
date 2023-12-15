@@ -1,1 +1,0 @@
-The SOLID principle that Airbnb was the Interface segregation principle. Hotel and Discounted Hotel both depend on one interface, and discount hotel depends on hotel.
